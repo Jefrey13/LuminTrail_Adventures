@@ -25,16 +25,16 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             <X className="h-6 w-6" />
           </Button>
           <nav className="flex flex-col space-y-4">
-            <a href="#home" className="text-lg font-medium text-accent hover:text-primary">
+            <a href="/" className="text-lg font-medium text-accent hover:text-primary">
               Inicio
             </a>
-            <a href="#about" className="text-lg font-medium text-accent hover:text-primary">
+            <a href="/about" className="text-lg font-medium text-accent hover:text-primary">
               Nosotros
             </a>
-            <a href="#services" className="text-lg font-medium text-accent hover:text-primary">
+            <a href="/services" className="text-lg font-medium text-accent hover:text-primary">
               Servicios
             </a>
-            <a href="#contact" className="text-lg font-medium text-accent hover:text-primary">
+            <a href="/contact" className="text-lg font-medium text-accent hover:text-primary">
               Contacto
             </a>
             <Button className="bg-secondary hover:bg-secondary/90 w-full">

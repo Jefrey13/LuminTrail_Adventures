@@ -1,0 +1,20 @@
+---
+import ServicesHero from "../../components/service/ServicesHero";
+import ServicesList from "../../components/service/ServicesList";
+import ServicesPricing from "../../components/service/ServicesPricing";
+import ServicesProcess from "../../components/service/ServicesProcess";
+import ServicesFAQ from "../../components/service/ServicesFAQ";
+import { ScrollToTop } from "../../components/service/ScrollToTop";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout>
+    <main class="min-h-screen">
+        <ServicesHero client:load/>
+        <ServicesList client:load/>
+        <ServicesProcess client:load/>
+        <ServicesPricing client:load/>
+        <ServicesFAQ client:load/>
+        <ScrollToTop client:load/>
+      </main>
+</Layout>

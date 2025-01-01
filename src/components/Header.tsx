@@ -28,16 +28,19 @@ const Header = () => {
           </a>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="nav-link text-accent">
+            <a href="/" className="nav-link text-accent">
               Inicio
             </a>
-            <a href="#about" className="nav-link text-accent">
+            <a href="/about" className="nav-link text-accent">
               Nosotros
             </a>
-            <a href="#services" className="nav-link text-accent">
+            <a href="/services" className="nav-link text-accent">
               Servicios
             </a>
-            <a href="#contact" className="nav-link text-accent">
+            <a href="/gallery" className="nav-link text-accent">
+              Galeria
+            </a>
+            <a href="/contact" className="nav-link text-accent">
               Contacto
             </a>
             <Button className="bg-secondary hover:bg-secondary/90">

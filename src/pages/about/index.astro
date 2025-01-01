@@ -1,0 +1,20 @@
+---
+import AboutHero from "../../components/about/AboutHero";
+import AboutHistory from "../../components/about/AboutHistory";
+import MissionVision from "../../components/about/MissionVision";
+import Values from "../../components/about/Values";
+import Impact from "../../components/about/Impact";
+import ScrollToTop from "../../components/about/ScrollToTop";
+import Layout from '../../layouts/Layout.astro'
+---
+
+<Layout>
+    <main class="min-h-screen">
+        <AboutHero client:load/>
+        <AboutHistory client:load/>
+        <MissionVision client:load/>
+        <Values client:load/>
+        <Impact client:load/>
+        <ScrollToTop client:load/>
+      </main>
+</Layout>

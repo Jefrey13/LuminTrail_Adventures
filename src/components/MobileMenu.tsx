@@ -34,6 +34,9 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
             <a href="/services" className="text-lg font-medium text-accent hover:text-primary">
               Servicios
             </a>
+            <a href="/gallery" className="text-lg font-medium text-accent hover:text-primary">
+              Gallery
+            </a>
             <a href="/contact" className="text-lg font-medium text-accent hover:text-primary">
               Contacto
             </a>

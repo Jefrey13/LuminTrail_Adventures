@@ -34,11 +34,11 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#home" className="hover:text-secondary transition-colors">Home</a></li>
-              <li><a href="#about" className="hover:text-secondary transition-colors">About Us</a></li>
-              <li><a href="#services" className="hover:text-secondary transition-colors">Services</a></li>
-              <li><a href="#testimonials" className="hover:text-secondary transition-colors">Testimonials</a></li>
-              <li><a href="#contact" className="hover:text-secondary transition-colors">Contact Us</a></li>
+              <li><a href="/" className="hover:text-secondary transition-colors">Home</a></li>
+              <li><a href="/about" className="hover:text-secondary transition-colors">About Us</a></li>
+              <li><a href="/services" className="hover:text-secondary transition-colors">Services</a></li>
+              <li><a href="/gallery" className="hover:text-secondary transition-colors">Gallery</a></li>
+              <li><a href="/contact" className="hover:text-secondary transition-colors">Contact Us</a></li>
               <li><a href="/privacy" className="hover:text-secondary transition-colors">Privacy Policy</a></li>
               <li><a href="/terms" className="hover:text-secondary transition-colors">Terms and Conditions</a></li>
             </ul>
@@ -59,7 +59,7 @@ const Footer = () => {
                 </a>
               </li>
               <li className="text-white/80">
-                123 Greenway Trail, EcoCity, Earth
+                123 Greenway Trail, Managua, Nicaragua.
               </li>
             </ul>
           </div>

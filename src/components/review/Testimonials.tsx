@@ -149,7 +149,7 @@ const Testimonials = () => {
       </div>
 
      {/* Wave separator */}
-<div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none bg-white">
+{/* <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none bg-white">
   <svg
     className="relative block w-full h-12"
     xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ const Testimonials = () => {
       fill="#f3f4f6"
     ></path>
   </svg>
-</div>
+</div> */}
 
     </section>
   );

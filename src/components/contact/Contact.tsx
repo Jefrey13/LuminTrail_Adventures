@@ -24,8 +24,10 @@ const faqs = [
     answer: "Sí, podemos personalizar cualquiera de nuestras aventuras según tus necesidades y preferencias específicas."
   }
 ];
+
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -43,10 +45,12 @@ const Contact = () => {
     }
     return () => observer.disconnect();
   }, []);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Aquí iría la lógica de envío del formulario
   };
+
   return (
     <section
       id="contact"
@@ -60,43 +64,35 @@ const Contact = () => {
       </div>
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+          <h2 className="text-3xl md:text-5xl font-bold text-primary mb-4">
             Contáctanos
           </h2>
-          <p className="text-xl text-accent max-w-2xl mx-auto">
+          <p className="text-lg md:text-xl text-accent max-w-2xl mx-auto">
             Estamos aquí para ayudarte a planificar tu próxima aventura
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Formulario de contacto */}
-          <div className="bg-white/50 backdrop-blur-sm p-8 rounded-lg shadow-lg">
+          <div className="bg-white/50 backdrop-blur-sm p-6 md:p-8 rounded-lg shadow-lg">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <Input
-                  placeholder="Nombre completo"
-                  className="bg-white/70"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  placeholder="Correo electrónico"
-                  className="bg-white/70"
-                />
-              </div>
-              <div>
-                <Input
-                  type="tel"
-                  placeholder="Teléfono"
-                  className="bg-white/70"
-                />
-              </div>
-              <div>
-                <Textarea
-                  placeholder="Tu mensaje"
-                  className="bg-white/70 min-h-[150px]"
-                />
-              </div>
+              <Input
+                placeholder="Nombre completo"
+                className="bg-white/70"
+              />
+              <Input
+                type="email"
+                placeholder="Correo electrónico"
+                className="bg-white/70"
+              />
+              <Input
+                type="tel"
+                placeholder="Teléfono"
+                className="bg-white/70"
+              />
+              <Textarea
+                placeholder="Tu mensaje"
+                className="bg-white/70 min-h-[150px]"
+              />
               <Button
                 type="submit"
                 size="lg"
@@ -108,11 +104,13 @@ const Contact = () => {
           </div>
           {/* Información de contacto y mapa */}
           <div className="space-y-8">
-            {/* Mapa placeholder - Aquí irá el mapa interactivo */}
-            <div className="bg-accent/10 rounded-lg h-[300px] flex items-center justify-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173616.08947828287!2d-86.34776994105954!3d12.104593015979976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1sen!2sni!4v1735501948418!5m2!1sen!2sni" width="600" height="300" loading="lazy"></iframe>
+            <div className="aspect-w-16 aspect-h-9 bg-accent/10 rounded-lg">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d173616.08947828287!2d-86.34776994105954!3d12.104593015979976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f71560dd907880b%3A0x6c5ef4a2144f4c6a!2sManagua!5e0!3m2!1sen!2sni!4v1735501948418!5m2!1sen!2sni"
+                className="w-full h-full"
+                loading="lazy"
+              ></iframe>
             </div>
-            {/* Información de contacto */}
             <div className="grid gap-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
@@ -142,7 +140,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {/* Redes sociales */}
             <div className="flex justify-center gap-4">
               <Button variant="outline" size="icon" className="rounded-full">
                 <Facebook className="w-5 h-5" />
@@ -156,7 +153,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        {/* FAQs */}
         <div className="max-w-3xl mx-auto mt-20">
           <h3 className="text-2xl font-bold text-primary mb-6 text-center">
             Preguntas Frecuentes
@@ -175,21 +171,8 @@ const Contact = () => {
           </Accordion>
         </div>
       </div>
-      {/* Separador de onda */}
-      <div className="absolute bg-white bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-12"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="#f3f4f6"
-          ></path>
-        </svg>
-      </div>
     </section>
   );
 };
+
 export default Contact;
